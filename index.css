@@ -1,0 +1,40 @@
+body {
+    background-image: url("assets/canopy.jpeg");
+    background-repeat: repeat;
+    width: auto;
+    height: auto;
+}
+
+audio {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+ul {
+    width: auto;
+    background-color: forestgreen;
+    border: 5px dashed brown;
+    padding: 15px;
+    display: flex;
+    font-weight: 1000;
+    list-style-type: none;
+    text-align: center;
+}
+
+li {
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: auto;
+    height: auto;
+    flex-grow: 1;
+    border: 2px outset black;
+    border-radius: 15px;
+    background-color: greenyellow;
+}
+
+a {
+    color: rgb(123, 29, 230);
+    text-decoration: none;
+}
