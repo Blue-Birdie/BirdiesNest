@@ -1,23 +1,70 @@
+@keyframes fly-tleft-to-tright {
+    from {left: -100px; top: 450px;}
+    to {left: 200vw; top: 200px;}
+}
+
+@keyframes fly-mleft-to-mright {
+    from {left: -100px; top: 350px;}
+    to {left: 500vw; top: 1500px;}
+}
+
+@keyframes fly-bleft-to-bright {
+    from {left: -100px; top: 750px;}
+    to {left: 125vw; top: 550px;}
+}
+
+@keyframes fly-tright-to-tleft {
+    from {left: 125vw; top: 575;}
+    to {left: -500px; top: 350px;}
+}
+
+@keyframes fly-mright-to-mleft {
+    from {left: 125vw; top: 250px;}
+    to {left: -250vw; top: 1250px;}
+}
+
+@keyframes fly-bright-to-bleft {
+    from {left: 125vw; top: 850px;}
+    to {left: -750px; top: 200px;}
+}
+
 body {
     background-image: url("assets/canopy.jpeg");
     background-repeat: repeat;
     width: auto;
     height: auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: palegreen;
+    color: darkslategrey;
+    padding: 15px;
+    border: 5px darkgray outset;
+    border-radius: 10px;
 }
 
 audio {
     position: absolute;
     right: 0px;
     bottom: 0px;
+    margin: 15px;
+    border: 5px solid rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
 }
 
 ul {
     width: auto;
     background-color: forestgreen;
-    border: 5px dashed brown;
+    border: 5px dashed peru;
     padding: 15px;
     display: flex;
     font-weight: 1000;
+    font-size: xx-large;
     list-style-type: none;
     text-align: center;
 }
@@ -29,12 +76,103 @@ li {
     width: auto;
     height: auto;
     flex-grow: 1;
-    border: 2px outset black;
+    border: 3px outset peru;
     border-radius: 15px;
     background-color: greenyellow;
 }
 
 a {
-    color: rgb(123, 29, 230);
+    color: paleturquoise;
     text-decoration: none;
+    -webkit-text-stroke: 2px midnightblue;
+}
+
+table {
+    background: white;
+    color: midnightblue;
+    font-size: x-large;
+    width: 76vw;
+    margin-left: 11vw;
+    margin-right: 11vw;
+}
+
+thead, tbody {
+    border: 2px solid black;
+}
+
+th, td {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+th {
+    font-weight: 1000;
+    font-size: xx-large;
+}
+
+body>img {
+    position: absolute;
+}
+
+.bird {
+    height: 75px;
+    width: 75px;
+    top: 100px;
+    left: -100px;
+}
+
+#top-left {
+    animation-name: fly-tleft-to-tright;
+    animation-duration: 5s;
+    transform: scaleX(-1);
+    animation-iteration-count: infinite;
+}
+
+#top-right {
+    animation-name: fly-tright-to-tleft;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+#mid-left {
+    animation-name: fly-mleft-to-mright;
+    animation-duration: 14s;
+    transform: scaleX(-1);
+    animation-iteration-count: infinite;
+}
+
+#mid-right {
+    animation-name: fly-mright-to-mleft;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+}
+
+#bottom-left {
+    animation-name: fly-bleft-to-bright;
+    animation-duration: 4s;
+    transform: scaleX(-1);
+    animation-iteration-count: infinite;
+}
+
+#bottom-right {
+    animation-name: fly-bright-to-bleft;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+#widgets {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    row-gap: -15px;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-top: 5vh;
+}
+
+#widgets>a {
+    width: max-content;
+    padding: 5px;
+    background-color: saddlebrown;
+    border: 3px black dashed;
 }
