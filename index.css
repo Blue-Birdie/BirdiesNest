@@ -54,11 +54,17 @@ h5 {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 3px;
+    padding: 8px;
     font-weight: 1000;
     font-size: larger;
     color: white;
     background-color: rgba(0, 0, 0, 0.466);
+}
+
+h5>a {
+    -webkit-text-stroke: 0px black !important;
+    color: rgb(255, 210, 217) !important;
+    text-decoration: underline lightpink wavy 2px;
 }
 
 footer {
@@ -69,6 +75,16 @@ footer {
     transform: translateX(-50%);
     margin-left: auto;
     margin-right: auto;
+}
+
+background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 35, 193, 0.397);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
 }
 
 audio {
@@ -82,8 +98,8 @@ audio {
 
 ul {
     width: auto;
-    background-color: forestgreen;
-    border: 5px dashed peru;
+    background-color: rgba(0, 46, 0, 0.483);
+    border: 5px dashed rgba(205, 134, 63, 0.672);
     padding: 15px;
     display: flex;
     font-weight: 1000;
@@ -99,9 +115,9 @@ li {
     width: auto;
     height: auto;
     flex-grow: 1;
-    border: 3px outset peru;
+    border: 3px outset rgba(205, 134, 63, 0.761);
     border-radius: 15px;
-    background-color: greenyellow;
+    background-color: rgba(134, 220, 5, 0.535);
 }
 
 a {
@@ -202,12 +218,12 @@ body>img {
 
 #guestbook-wrapper {
     width: auto;
-    padding-left: 25vw;
-    padding-right: 25vw;
-    height: 60%;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    height: 65%;
 }
 
 #guestbook {
-    width: 50vw;
+    width: 40vw;
     height: 100%
 }
